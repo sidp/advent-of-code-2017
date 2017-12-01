@@ -1,5 +1,6 @@
 const fs = require('fs');
-const input = fs.readFileSync('./1-input.txt', 'utf-8');
+const path = require('path');
+const input = fs.readFileSync(path.join(__dirname, '../inputs/1.txt'), 'utf-8');
 
 const numbers = input.split('').map(number => parseInt(number, 10));
 
@@ -18,4 +19,4 @@ function sumPreviousNumber(state, number) {
 
 const sum = numbers.reduce(sumPreviousNumber, initialState).sum;
 
-console.log('Sum:', sum);
+module.exports = sum;

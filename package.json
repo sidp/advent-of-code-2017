@@ -1,0 +1,11 @@
+{
+  "name": "advent-of-code-2017",
+  "version": "1.0.0",
+  "description": "My solutions to Advent of Code 2017",
+  "repository": "git@github.com:sidp/advent-of-code-2017.git",
+  "author": "Peter Simonsson <peter@simonsson.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
